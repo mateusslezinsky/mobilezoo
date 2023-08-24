@@ -1,26 +1,15 @@
 import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-  topContainer: {
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  headerText: {
-    flex: 2,
-  },
-  backArrow: { flex: 1, alignItems: "center" },
   cardContainer: {
     flexDirection: "row",
-    marginVertical: 20,
+    marginTop: 20,
     padding: 20,
     marginHorizontal: 15,
     borderWidth: 2,
     borderRadius: 10,
     borderColor: "#ccc",
-    justifyContent: "space-around",
+    justifyContent: "space-between",
     alignItems: "center",
   },
   parkImage: {
