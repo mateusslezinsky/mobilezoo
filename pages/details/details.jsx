@@ -7,7 +7,7 @@ import {
 } from "react-native";
 
 import CustomText from "../../components/text/text.component";
-import { AntDesign } from "@expo/vector-icons";
+import { AntDesign, Foundation, MaterialIcons } from "@expo/vector-icons";
 import MapView, { Marker } from "react-native-maps";
 
 import { styles } from "./details.styles";
@@ -77,7 +77,8 @@ export default function Details({ navigation, route }) {
             </CustomText>
             <TouchableOpacity onPress={openMap}>
               <CustomText style={styles.addressStreet}>
-                {cardDetails.address}
+                {cardDetails.address}{" "}
+                <AntDesign name="arrowright" size={16} color="#579cd1" />
               </CustomText>
             </TouchableOpacity>
             <MapView style={styles.map} region={cardDetails.coordinates}>
@@ -91,6 +92,50 @@ export default function Details({ navigation, route }) {
                 O parque funciona das {cardDetails.workingTime}
               </CustomText>
             </View>
+            <View style={styles.valueContainer}>
+              <CustomText style={styles.value}>Valor</CustomText>
+              <View
+                style={
+                  cardDetails.price === "Gratuito" ? styles.free : styles.paid
+                }
+              >
+                <TouchableOpacity
+                  onPress={() => {
+                    if (cardDetails.priceLink) {
+                      Linking.openURL(cardDetails.priceLink);
+                    } else {
+                      return;
+                    }
+                  }}
+                >
+                  <CustomText style={{ color: "#fff" }}>
+                    {cardDetails.price}
+                  </CustomText>
+                </TouchableOpacity>
+              </View>
+            </View>
+            <View style={styles.contact}>
+              <CustomText>Contato</CustomText>
+              <View style={styles.contactIconContainer}>
+                <TouchableOpacity
+                  onPress={() =>
+                    Linking.openURL(`tel:${cardDetails.telephone}`)
+                  }
+                >
+                  <Foundation name="telephone" size={30} color="#007918" />
+                </TouchableOpacity>
+                <TouchableOpacity
+                  onPress={() => Linking.openURL(`mailto:${cardDetails.email}`)}
+                >
+                  <MaterialIcons name="email" size={30} color="#4d4d4d" />
+                </TouchableOpacity>
+                <TouchableOpacity
+                  onPress={() => Linking.openURL(cardDetails.facebook)}
+                >
+                  <AntDesign name="facebook-square" size={30} color="#0B8AF0" />
+                </TouchableOpacity>
+              </View>
+            </View>
             <View style={styles.websiteContainer}>
               <TouchableOpacity
                 style={styles.websiteBtn}
@@ -99,6 +144,7 @@ export default function Details({ navigation, route }) {
                 <CustomText style={styles.websiteBtnText}>
                   Acessar o site
                 </CustomText>
+                <AntDesign name="arrowright" size={16} color="#fff" />
               </TouchableOpacity>
             </View>
           </ScrollView>

@@ -14,6 +14,10 @@
       },
       "websiteURL": "http://portal.pmf.sc.gov.br/entidades/floram/index.php?cms=agendamentos+e+informacoes&menu=6&submenuid=415",
       "workingTime": "8h às 18h, todos os dias exceto segunda-feira",
+      "telephone": "+554832699551",
+      "email": "floramea@pmf.sc.gov.br",
+      "facebook": "https://m.facebook.com/profile.php?id=173592826039725",
+      "price": "Gratuito",
       "pics": [
         {
           "url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/ae/e5/55/photo1jpg.jpg?w=1200&h=-1&s=1",
@@ -42,7 +46,11 @@
         "longitudeDelta": 0.01
       },
       "websiteURL": "https://pt.wikipedia.org/wiki/Jardim_Bot%C3%A2nico_de_Florian%C3%B3polis",
-      "workingTime": "7h às 18h, todos os dias exceto segunda-feira"
+      "workingTime": "7h às 18h, todos os dias exceto segunda-feira",
+      "telephone": "+554832614818",
+      "email": "floramea@pmf.sc.gov.br",
+      "facebook": "https://www.facebook.com/florianopolisbotanicgarden/",
+      "price": "Gratuito"
     },
     {
       "name": "Zoológico de Brasília",
@@ -57,7 +65,12 @@
         "longitudeDelta": 0.01
       },
       "websiteURL": "https://www.zoo.df.gov.br/",
-      "workingTime": "8h30 às 17h, todos os dias exceto segunda-feira"
+      "workingTime": "8h30 às 17h, todos os dias exceto segunda-feira",
+      "telephone": "+556134457037",
+      "email": "atendimento@zoo.df.gov.br",
+      "facebook": "https://www.facebook.com/zoobrasilia/?locale=pt_BR",
+      "price": "R$ 10 (Inteira)\nR$ 5 (Meia entrada)",
+      "priceLink": "https://www.zoo.df.gov.br/visitacao/"
     },
     {
       "name": "Jardim Botânico de Curitiba",
@@ -72,7 +85,11 @@
         "longitudeDelta": 0.01
       },
       "websiteURL": "https://www.curitiba.pr.gov.br/conteudo/jardim-botanico-municipal-de-curitiba/287",
-      "workingTime": "9h às 17h, todos os dias exceto segunda-feira"
+      "workingTime": "9h às 17h, todos os dias exceto segunda-feira",
+      "telephone": "+554132646994",
+      "email": "jardimbotanico@curitiba.pr.gov.br",
+      "facebook": "https://www.facebook.com/jardimbotanicodecuritiba/?locale=pt_BR",
+      "price": "Gratuito"
     },
     {
       "name": "Parque Ibirapuera",
@@ -87,7 +104,12 @@
         "longitudeDelta": 0.01
       },
       "websiteURL": "https://www.parquedoibirapuera.org/",
-      "workingTime": "5h às 23h, todos os dias"
+      "workingTime": "5h às 23h, todos os dias",
+      "telephone": "+551155745045",
+      "email": "faleconosco@urbiaparques.com.br",
+      "facebook": "https://www.facebook.com/IbirapueraOficial/?locale=pt_BR",
+      "price": "R$25 inteira\nR$12,50 meia-entrada",
+      "priceLink": "https://planetario.urbiapass.com.br"
     }
   ]
 }

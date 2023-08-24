@@ -46,6 +46,9 @@ export const styles = StyleSheet.create({
     borderWidth: 2,
     padding: 20,
     borderRadius: 20,
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 5,
   },
   websiteBtnText: {
     color: "#fff",
@@ -58,6 +61,7 @@ export const styles = StyleSheet.create({
     backgroundColor: "#509F60",
     borderColor: "#316e3c",
     alignItems: "center",
+    justifyContent: "center",
     padding: 10,
     marginVertical: 20,
   },
@@ -74,5 +78,39 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     alignItems: "center",
     gap: 10,
+  },
+  contact: {
+    alignItems: "center",
+  },
+  contactIconContainer: {
+    flexDirection: "row",
+    justifyContent: "space-around",
+    width: "50%",
+    marginVertical: 20,
+  },
+  free: {
+    backgroundColor: "#509F60",
+    padding: 10,
+    color: "#fff",
+    fontSize: 16,
+    borderWidth: 2,
+    borderRadius: 20,
+    borderColor: "#316e3c",
+  },
+  paid: {
+    backgroundColor: "#cb2905",
+    padding: 10,
+    color: "#fff",
+    fontSize: 16,
+    borderWidth: 2,
+    borderRadius: 20,
+    borderColor: "#850000",
+  },
+  valueContainer: {
+    alignItems: "center",
+    marginVertical: 20,
+  },
+  value: {
+    marginBottom: 5,
   },
 });
