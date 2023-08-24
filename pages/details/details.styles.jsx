@@ -63,10 +63,16 @@ export const styles = StyleSheet.create({
   },
   image: {
     width: "100%",
-    height: "50%",
-    marginVertical: 10,
+    height: 300,
     borderRadius: 20,
     borderColor: "#ccc",
     borderWidth: 2,
+    flexShrink: 1,
+  },
+  imagesContainer: {
+    marginBottom: 10,
+    flexDirection: "row",
+    alignItems: "center",
+    gap: 10,
   },
 });

@@ -13,7 +13,21 @@
         "longitudeDelta": 0.01
       },
       "websiteURL": "http://portal.pmf.sc.gov.br/entidades/floram/index.php?cms=agendamentos+e+informacoes&menu=6&submenuid=415",
-      "workingTime": "8h às 18h, todos os dias exceto segunda-feira"
+      "workingTime": "8h às 18h, todos os dias exceto segunda-feira",
+      "pics": [
+        {
+          "url": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/ae/e5/55/photo1jpg.jpg?w=1200&h=-1&s=1",
+          "id": 1
+        },
+        {
+          "url": "https://guiafloripa.com.br/wp-content/uploads/2020/11/parque-corrego-grande-min.jpg",
+          "id": 2
+        },
+        {
+          "url": "https://destinoflorianopolis.com.br/wp-content/uploads/2018/04/parque-ecol%C3%B3gico-c%C3%B3rrego-grande.jpg",
+          "id": 3
+        }
+      ]
     },
     {
       "name": "Jardim Botânico de Florianópolis",

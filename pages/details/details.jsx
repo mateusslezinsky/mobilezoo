@@ -4,7 +4,6 @@ import {
   SafeAreaView,
   ScrollView,
   Linking,
-  Image,
 } from "react-native";
 
 import CustomText from "../../components/text/text.component";
@@ -21,7 +20,7 @@ export default function Details({ navigation, route }) {
   const [isFavourite, setIsFavourite] = useState(false);
 
   useEffect(() => {
-    data.map((props) => {
+    data.find((props) => {
       if (props.id === route.params.id) {
         setCardDetails({
           ...props,
@@ -44,6 +43,7 @@ export default function Details({ navigation, route }) {
 
     Linking.openURL(url);
   };
+
   return (
     <SafeAreaView style={styles.container}>
       {cardDetails ? (
@@ -72,11 +72,6 @@ export default function Details({ navigation, route }) {
             </View>
           </View>
           <ScrollView style={styles.mainInfoContainer}>
-            <View></View>
-            <Image
-              style={styles.image}
-              source={{ uri: cardDetails.imageURL }}
-            />
             <CustomText style={styles.addressText}>
               Este parque está localizado em
             </CustomText>
