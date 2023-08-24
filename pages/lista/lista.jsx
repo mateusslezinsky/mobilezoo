@@ -21,8 +21,8 @@ export default function Lista({ navigation }) {
         <CustomText style={styles.headerText}>Lista de Parques</CustomText>
       </View>
       <ScrollView>
-        {data.map(({ name, location, imageURL, id }) => (
-          <Card name={name} location={location} imageURL={imageURL} key={id} />
+        {data.map((props) => (
+          <Card key={props.id} navigation={navigation} {...props} />
         ))}
       </ScrollView>
     </SafeAreaView>
