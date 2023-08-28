@@ -5,13 +5,22 @@ export const styles = StyleSheet.create({
     flex: 1,
   },
   topContainer: {
+    backgroundColor: "#8bc497",
+    padding: 15,
+    borderBottomColor: "#316e3c",
+    borderBottomWidth: 2,
+  },
+  header: {
     flexDirection: "row",
     alignItems: "center",
+    justifyContent: "center",
+    marginTop: 30,
   },
   headerText: {
     flex: 2,
+    color: "#fff",
   },
-  backArrow: { flex: 1, alignItems: "center" },
+  backArrow: { flex: 1 },
   cardContainer: {
     flexDirection: "row",
     marginVertical: 20,

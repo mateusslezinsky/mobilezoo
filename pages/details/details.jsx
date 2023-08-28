@@ -45,30 +45,32 @@ export default function Details({ navigation, route }) {
   };
 
   return (
-    <SafeAreaView style={styles.container}>
+    <View style={styles.container}>
       {cardDetails ? (
-        <View>
+        <>
           <View style={styles.topContainer}>
-            <TouchableOpacity
-              onPress={() => navigation.navigate("lista")}
-              style={styles.backArrow}
-            >
-              <AntDesign name="arrowleft" size={30} color="black" />
-            </TouchableOpacity>
-            <CustomText style={styles.headerText}>
-              {cardDetails.name}
-            </CustomText>
-            <View>
+            <View style={styles.header}>
               <TouchableOpacity
-                onPress={() => setIsFavourite(!isFavourite)}
+                onPress={() => navigation.navigate("lista")}
                 style={styles.backArrow}
               >
-                {isFavourite ? (
-                  <AntDesign name="star" size={24} color="#c2b800" />
-                ) : (
-                  <AntDesign name="staro" size={24} color="#c2b800" />
-                )}
+                <AntDesign name="arrowleft" size={30} color="white" />
               </TouchableOpacity>
+              <CustomText style={styles.headerText}>
+                {cardDetails.name}
+              </CustomText>
+              <View>
+                <TouchableOpacity
+                  onPress={() => setIsFavourite(!isFavourite)}
+                  style={styles.backArrow}
+                >
+                  {isFavourite ? (
+                    <AntDesign name="star" size={30} color="#fff" />
+                  ) : (
+                    <AntDesign name="staro" size={30} color="#fff" />
+                  )}
+                </TouchableOpacity>
+              </View>
             </View>
           </View>
           <ScrollView style={styles.mainInfoContainer}>
@@ -148,10 +150,10 @@ export default function Details({ navigation, route }) {
               </TouchableOpacity>
             </View>
           </ScrollView>
-        </View>
+        </>
       ) : (
         <></>
       )}
-    </SafeAreaView>
+    </View>
   );
 }
