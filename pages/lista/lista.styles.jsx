@@ -5,7 +5,7 @@ export const styles = StyleSheet.create({
     flex: 1,
   },
   topContainer: {
-    backgroundColor: "#8bc497",
+    backgroundColor: "#509F60",
     padding: 15,
     borderBottomColor: "#316e3c",
     borderBottomWidth: 2,
@@ -23,14 +23,14 @@ export const styles = StyleSheet.create({
   backArrow: { flex: 1 },
   cardContainer: {
     flexDirection: "row",
+    justifyContent: "space-between",
+    alignItems: "center",
     marginVertical: 20,
     padding: 20,
     marginHorizontal: 15,
     borderWidth: 2,
     borderRadius: 10,
     borderColor: "#ccc",
-    justifyContent: "space-around",
-    alignItems: "center",
   },
   parkImage: {
     width: 110,
