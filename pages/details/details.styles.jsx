@@ -1,4 +1,6 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Dimensions } from "react-native";
+
+const windowWidth = Dimensions.get("window").width;
 
 export const styles = StyleSheet.create({
   container: {
@@ -119,5 +121,22 @@ export const styles = StyleSheet.create({
   },
   value: {
     marginBottom: 5,
+  },
+  cardContainer: {
+    flexDirection: "row",
+    justifyContent: "center",
+    alignItems: "center",
+    marginVertical: 20,
+    padding: 0,
+    borderWidth: 2,
+    borderRadius: 10,
+    borderColor: "#ccc",
+    width: windowWidth * 0.85,
+    height: windowWidth * 0.85,
+    overflow: "hidden",
+  },
+  parkImage: {
+    width: "100%",
+    height: "100%",
   },
 });

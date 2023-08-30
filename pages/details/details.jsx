@@ -1,9 +1,10 @@
 import {
   View,
   TouchableOpacity,
-  SafeAreaView,
+  Image,
   ScrollView,
   Linking,
+  FlatList,
 } from "react-native";
 
 import CustomText from "../../components/text/text.component";
@@ -74,6 +75,23 @@ export default function Details({ navigation, route }) {
             </View>
           </View>
           <ScrollView style={styles.mainInfoContainer}>
+            <CustomText style={styles.addressText}>
+              Veja fotos do parque:
+            </CustomText>
+            <View style={styles.cardContainer}>
+              <View>
+                <Image
+                  style={styles.parkImage}
+                  source={{ uri: cardDetails.imageURL }}
+                />
+              </View>
+              <View style={styles.cardContainer}>
+                <Image
+                  style={styles.parkImage}
+                  source={{ uri: cardDetails.imageURL }}
+                />
+              </View>
+            </View>
             <CustomText style={styles.addressText}>
               Este parque está localizado em
             </CustomText>
