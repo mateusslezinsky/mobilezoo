@@ -129,8 +129,6 @@ export default function Details({navigation, route}) {
                                     onPress={() => {
                                         if (cardDetails.priceLink) {
                                             Linking.openURL(cardDetails.priceLink);
-                                        } else {
-                                            return;
                                         }
                                     }}
                                 >
