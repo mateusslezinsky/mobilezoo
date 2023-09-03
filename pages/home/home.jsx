@@ -17,7 +17,7 @@ export default function Home({ navigation }) {
         <AntDesign name="arrowright" size={24} color="white" />
       </TouchableOpacity>
       <TouchableOpacity
-        style={styles.btnContainer}
+        style={[styles.btnContainer, styles.favouriteBtnContainer]}
         onPress={() => navigation.navigate("favoritos")}
       >
         <CustomText style={styles.btnText}>Ver Favoritos</CustomText>

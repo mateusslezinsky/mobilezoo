@@ -5,9 +5,9 @@ export const styles = StyleSheet.create({
     flex: 1,
   },
   topContainer: {
-    backgroundColor: "#509F60",
+    backgroundColor: "#b6b114",
     padding: 15,
-    borderBottomColor: "#316e3c",
+    borderBottomColor: "#82837b",
     borderBottomWidth: 2,
   },
   header: {
