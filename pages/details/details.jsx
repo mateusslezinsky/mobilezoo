@@ -83,7 +83,7 @@ export default function Details({ navigation, route }) {
               </View>
             </View>
           </View>
-          <ScrollView style={styles.mainInfoContainer} ref={scrollViewRef}>
+          <ScrollView style={styles.mainInfoContainer}>
             <CustomText style={styles.addressText}>
               Veja fotos do parque:
             </CustomText>
