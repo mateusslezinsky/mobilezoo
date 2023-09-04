@@ -5,11 +5,13 @@ import {
     ScrollView,
     Linking,
     FlatList,
+    Dimensions,
 } from "react-native";
 
 import CustomText from "../../components/text/text.component";
 import {AntDesign, Foundation, MaterialIcons} from "@expo/vector-icons";
 import MapView, {Marker} from "react-native-maps";
+import YoutubePlayer from 'react-native-youtube-iframe';
 
 import {styles} from "./details.styles";
 import {useEffect, useState} from "react";
@@ -98,6 +100,12 @@ export default function Details({navigation, route}) {
                                 keyExtractor={item => item.id}
                             />
                         </View>
+                        <View style={styles.video}>
+                            <YoutubePlayer
+                                height={Dimensions.get("window").height * 0.27}
+                                play={false}
+                                videoId={cardDetails.embeddedVideoId}/>
+                        </View>
                         <CustomText style={styles.addressText}>
                             Este parque está localizado em
                         </CustomText>
@@ -177,5 +185,6 @@ export default function Details({navigation, route}) {
                 <></>
             )}
         </View>
-    );
+    )
+        ;
 }

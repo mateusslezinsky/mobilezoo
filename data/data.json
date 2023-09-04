@@ -4,6 +4,7 @@
       "name": "Parque Ecológico do Córrego Grande",
       "location": "Florianópolis, SC",
       "imageURL": "https://i.ytimg.com/vi/FbkYCAKTc_Y/maxresdefault.jpg",
+      "embeddedVideoId": "FbkYCAKTc_Y",
       "id": 1,
       "address": "Rua João Pio Duarte Silva, 535",
       "coordinates": {
@@ -45,6 +46,7 @@
       "name": "Jardim Botânico de Florianópolis",
       "location": "Florianópolis, SC",
       "imageURL": "https://arqsc.com.br/wp-content/uploads/2016/08/parque-jardim-botnaico.jpg",
+      "embeddedVideoId": "9O-E2oyglgw",
       "id": 2,
       "address": "Rodovia Admar Gonzaga, 742",
       "coordinates": {
@@ -86,6 +88,7 @@
       "name": "Zoológico de Brasília",
       "location": "Brasília, DF",
       "imageURL": "https://www.visiteobrasil.com.br/galerias/carac1-distrito-federal-jardim-zoologico-de-brasilia/807-015311-jardim-zoologico-de-brasilia-foto-daderot-licenca-cc-by-sa-10gr.jpg",
+      "embeddedVideoId": "Db8QDXGQGVU",
       "id": 3,
       "address": "Avenida das Nações, Via L4 Sul, s/n",
       "coordinates": {
@@ -128,6 +131,7 @@
       "name": "Jardim Botânico de Curitiba",
       "location": "Curitiba, PR",
       "imageURL": "https://catracalivre.com.br/wp-content/uploads/2018/08/cidades-mais-baratas-viajar-feriado-7-de-setembro.jpg",
+      "embeddedVideoId": "Ztghg1LG1m4",
       "id": 4,
       "address": "Rua Engo. Ostoja Roguski, 350",
       "coordinates": {
@@ -169,6 +173,7 @@
       "name": "Parque Ibirapuera São Paulo",
       "location": "São Paulo, SP",
       "imageURL": "https://saopauloinfoco.com.br/wp-content/uploads/2013/03/Parque-do-Ibirapuera_Cidade-de-São-Paulo.jpg",
+      "embeddedVideoId": "kkIfMf7UMUg",
       "id": 5,
       "address": "Avenida Pedro Álvares Cabral",
       "coordinates": {

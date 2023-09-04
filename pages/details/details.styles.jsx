@@ -88,6 +88,9 @@ export const styles = StyleSheet.create({
     alignItems: "center",
     gap: 10,
   },
+  video: {
+    borderRadius: 20,
+  },
   contact: {
     alignItems: "center",
   },
