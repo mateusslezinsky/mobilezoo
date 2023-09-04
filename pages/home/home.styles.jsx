@@ -18,13 +18,17 @@ export const styles = StyleSheet.create({
     gap: 5,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#509F60",
     borderWidth: 2,
+    backgroundColor: "#509F60",
     borderColor: "#316e3c",
     borderRadius: 20,
     padding: 20,
   },
   btnText: {
     color: "#fff",
+  },
+  favouriteBtnContainer: {
+    backgroundColor: "#b6b114",
+    borderColor: "#82837b",
   },
 });
