@@ -1,4 +1,5 @@
-import { SafeAreaView, TouchableOpacity, View, ScrollView } from "react-native";
+import { useEffect, useContext } from "react";
+import { TouchableOpacity, View, ScrollView } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 
 import CustomText from "../../components/text/text.component";
@@ -7,8 +8,13 @@ import Card from "../../components/card/card.component";
 import { data } from "../../data/data.json";
 
 import { styles } from "./favoritos.styles";
+import AsyncStorage from "@react-native-async-storage/async-storage";
+
+import { FavouritesContext } from "../../providers/favourites.provider";
 
 export default function Favoritos({ navigation }) {
+  const { favourites, setFavourites } = useContext(FavouritesContext);
+
   return (
     <View style={styles.container}>
       <View style={styles.topContainer}>
@@ -25,7 +31,7 @@ export default function Favoritos({ navigation }) {
         </View>
       </View>
       <ScrollView>
-        {data.map((props) => (
+        {favourites.map((props) => (
           <Card key={props.id} navigation={navigation} {...props} />
         ))}
       </ScrollView>
