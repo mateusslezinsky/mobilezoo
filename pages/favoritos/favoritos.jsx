@@ -1,11 +1,9 @@
-import { useEffect, useContext } from "react";
+import { useContext } from "react";
 import { TouchableOpacity, View, ScrollView } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 
 import CustomText from "../../components/text/text.component";
 import Card from "../../components/card/card.component";
-
-import { data } from "../../data/data.json";
 
 import { styles } from "./favoritos.styles";
 import AsyncStorage from "@react-native-async-storage/async-storage";

@@ -1,4 +1,4 @@
-import { SafeAreaView, TouchableOpacity, View, ScrollView } from "react-native";
+import { TouchableOpacity, View, ScrollView } from "react-native";
 import { AntDesign } from "@expo/vector-icons";
 
 import CustomText from "../../components/text/text.component";
